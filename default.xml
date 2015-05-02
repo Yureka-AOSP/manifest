@@ -23,9 +23,10 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build" remote="cm" groups="pdk,tradefed" >
+  <project path="build" name="yu-aosp/android_build" remote="github" revision="android-5.1" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="art" name="platform/art" groups="pdk" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -110,7 +111,6 @@
   <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
   <project path="external/fio" name="platform/external/fio" />
-  <project path="external/flac" name="platform/external/flac" groups="pdk" />
   <project path="external/fonttools" name="platform/external/fonttools" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk-cw-fs" />
@@ -242,8 +242,6 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,tradefed" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
@@ -447,12 +445,12 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   
   <!-- CyanogenMod Repos -->
-  <project path="art" name="CyanogenMod/android_art" groups="pdk" remote="cm" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" />
   <project name="CyanogenMod/android_external_ffmpeg" path="external/ffmpeg" remote="cm" />
   <project path="external/google" name="CyanogenMod/android_external_google" remote="cm" />
   <project name="CyanogenMod/android_external_stagefright-plugins" path="external/stagefright-plugins" remote="cm" />
   <project name="CyanogenMod/android_frameworks_av" path="frameworks/av" groups="pdk" remote="cm" />
+  <project name="CyanogenMod/android_external_flac" path="external/flac" groups="pdk" remote="cm" />
   <project name="CyanogenMod/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" groups="pdk" remote="cm" />
   <project name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" path="hardware/qcom/bt" remote="cm" />
   <project name="CyanogenMod/android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="cm" />
@@ -491,6 +489,8 @@
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="cm" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="cm" />
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" remote="cm" />
+  <project name="CyanogenMod/android_external_tinyalsa" path="external/tinyalsa" groups="pdk" remote="cm" />
+  <project name="CyanogenMod/android_external_tinycompress" path="external/tinycompress" remote="cm" />
   
   <!-- Custom --> 
   <project path="device/yu/tomato" name="yu-aosp/android_device_yu_tomato" remote="github" revision="android-5.1" /> 
@@ -498,7 +498,7 @@
   <project path="frameworks/base" name="Yureka-AOSP/frameworks_base" groups="pdk-cw-fs" remote="github" revision="lp5.1" />
   <project path="packages/apps/Settings" name="Yureka-AOSP/packages_apps_Settings" remote="github" revision="lp5.1" />
   <project path="frameworks/native" name="Yureka-AOSP/frameworks_native" groups="pdk" remote="github" revision="lp5.1" />
-  <project name="F-AOSP/platform_vendor_aosp" path="vendor/aosp" remote="github" revision="aosp-5.1" />
+  <project name="yu-aosp/android_vendor_yu-aosp" path="vendor/yu-aosp" remote="github" revision="android-5.1" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="glade" />
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="glade" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="glade" />
