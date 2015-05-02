@@ -376,7 +376,6 @@
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -524,11 +523,13 @@
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" remote="cm" groups="pdk-cw-fs" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="cm" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="cm" />
+    <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" remote="cm" />
   
   <!-- Custom --> 
   <project path="device/yu/tomato" name="yu-aosp/android_device_yu_tomato" remote="github" revision="android-5.1" /> 
   <project path="kernel/yu/msm8916" name="yu-aosp/android_kernel_yu_msm8916" remote="github" revision="android-5.1" />
   <project path="frameworks/base" name="Yureka-AOSP/frameworks_base" groups="pdk-cw-fs" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Settings" name="Yureka-AOSP/packages_apps_Settings" remote="github" revision="lp5.1" />
   <project path="frameworks/native" name="Yureka-AOSP/frameworks_native" groups="pdk" remote="github" revision="lp5.1" /> 
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="glade" />
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="glade" />
@@ -538,7 +539,6 @@
   <project path="packages/apps/InCallUI" name="packages_apps_InCallUI" remote="glade" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="glade" />
   <project path="packages/apps/Mms" name="packages_apps_Mms" remote="glade" />
-  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="glade" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="glade" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="glade" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="glade" />
